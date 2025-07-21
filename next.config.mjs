@@ -156,9 +156,7 @@ const config = withPWA({
       }
     }
   ],
-  buildExcludes: [/app-build-manifest\.json$/],
-  excludeDefaultMomentLocales: true,
-  dynamicStartUrl: true
+  buildExcludes: [/app-build-manifest\.json$/]
 })(nextConfig);
 
 export default config;
