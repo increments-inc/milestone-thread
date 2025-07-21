@@ -4,7 +4,7 @@ export function FloatingActionButton({ onClick }) {
   return (
     <button
       onClick={onClick}
-      className="fixed bottom-6 right-6 z-40 w-14 h-14 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center group"
+      className="fixed bottom-24 right-6 z-40 w-14 h-14 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center group"
       aria-label="রক্তদাতা হিসেবে নিবন্ধন করুন"
     >
       <Plus className="w-6 h-6 group-hover:rotate-90 transition-transform duration-200" />

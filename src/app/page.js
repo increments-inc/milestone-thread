@@ -5,6 +5,8 @@ import { Search, Filter, Users } from 'lucide-react';
 import { DonorCard } from '@/components/DonorCard';
 import { FloatingActionButton } from '@/components/FloatingActionButton';
 import { DonorRegistrationDialog } from '@/components/DonorRegistrationDialog';
+import { BottomNavbar } from '@/components/BottomNavbar';
+import { MissingPersons } from '@/components/MissingPersons';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -13,6 +15,7 @@ export default function Home() {
   const [showRegistrationDialog, setShowRegistrationDialog] = useState(false);
   const [bloodDonors, setBloodDonors] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState('blood');
 
   // Fetch donors from API
   const fetchDonors = async () => {
@@ -107,8 +110,18 @@ export default function Home() {
     }
   };
 
+  // Render content based on active tab
+  if (activeTab === 'missing') {
+    return (
+      <>
+        <MissingPersons />
+        <BottomNavbar activeTab={activeTab} onTabChange={setActiveTab} />
+      </>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pb-20">
       {/* Header */}
       <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -226,6 +239,9 @@ export default function Home() {
         onSubmit={handleDonorRegistration}
         existingDonors={bloodDonors}
       />
+
+      {/* Bottom Navigation */}
+      <BottomNavbar activeTab={activeTab} onTabChange={setActiveTab} />
     </div>
   );
 }

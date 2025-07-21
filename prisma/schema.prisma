@@ -27,3 +27,23 @@ model BloodDonor {
 
   @@map("blood_donors")
 }
+
+model MissingPerson {
+  id             String   @id @default(cuid())
+  fullName       String
+  class          String?
+  code           String?
+  section        String?
+  parentContacts Json?    // Store parent contact numbers as JSON array
+  photo          Bytes?   // Store image as binary data (blob)
+  photoMimeType  String?  // Store image MIME type for proper display
+  status         String   @default("missing") // missing, found_alive, found_dead, verified
+  foundDetails   Json?    // Store found information as JSON
+  reportedBy     String?  // Optional field for who reported
+  lastSeen       DateTime?
+  description    String?  // Additional details about the missing person
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@map("missing_persons")
+}
