@@ -1,15 +1,15 @@
 {
-  "name": "Milestone Thread",
-  "short_name": "M-Thread",
-  "description": "Track your milestones and achievements in a beautiful timeline",
-  "theme_color": "#000000",
+  "name": "রক্তদাতা তালিকা - জরুরি রক্তদান",
+  "short_name": "রক্তদাতা",
+  "description": "মাইলস্টোন কলেজ দুর্ঘটনার আহতদের জন্য জরুরি রক্তদান। দ্রুত রক্তদাতা খুঁজুন এবং জীবন বাঁচান।",
+  "theme_color": "#ef4444",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
-  "id": "milestone-thread-pwa",
-  "categories": ["productivity", "lifestyle"],
+  "id": "blood-donor-emergency-pwa",
+  "categories": ["medical", "emergency", "social"],
   "icons": [
     {
       "src": "/icons/icon-72x72.png",
@@ -91,21 +91,21 @@
   ],
   "shortcuts": [
     {
-      "name": "Add Milestone",
-      "short_name": "Add",
-      "description": "Create a new milestone",
-      "url": "/add-milestone",
+      "name": "রক্তদান করুন",
+      "short_name": "দান করুন",
+      "description": "নতুন রক্তদাতা হিসেবে নিবন্ধন করুন",
+      "url": "/?register=true",
       "icons": [{ "src": "/icons/add-icon-96x96.png", "sizes": "96x96" }]
     },
     {
-      "name": "View Timeline",
-      "short_name": "Timeline",
-      "description": "View your milestone timeline",
-      "url": "/timeline",
+      "name": "রক্তদাতা খুঁজুন",
+      "short_name": "খুঁজুন",
+      "description": "জরুরি রক্তের জন্য দাতা খুঁজুন",
+      "url": "/",
       "icons": [{ "src": "/icons/timeline-icon-96x96.png", "sizes": "96x96" }]
     }
   ],
-  "lang": "en-US",
+  "lang": "bn-BD",
   "dir": "ltr",
   "prefer_related_applications": false,
   "related_applications": []

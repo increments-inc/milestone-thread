@@ -122,13 +122,12 @@ export default function Home() {
                   রক্তদাতা তালিকা
                 </h1>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  জরুরি রক্তের প্রয়োজনে যোগাযোগ করুন
+                  Powered by <a href="https://incrementsinc.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300">Increments Inc.</a>
                 </p>
               </div>
             </div>
             <div className="text-right">
               <p className="text-2xl font-bold text-red-500">{filteredDonors.length}</p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">দাতা পাওয়া গেছে</p>
             </div>
           </div>
         </div>
