@@ -33,11 +33,11 @@ export function DonorCard({ donor }) {
               </h3>
               <a 
                 href={`tel:${donor.phoneNumber.replace(/\s/g, '')}`}
-                className="flex items-center gap-2 px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white text-sm font-medium rounded-lg transition-colors"
+                className="flex items-center gap-1 px-2 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-medium rounded-lg transition-colors flex-shrink-0 ml-2"
                 title={`${donor.phoneNumber} এ কল করুন`}
               >
-                <Phone className="w-4 h-4" />
-                কল করুন
+                <Phone className="w-3 h-3" />
+                কল
               </a>
             </div>
             

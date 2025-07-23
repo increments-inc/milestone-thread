@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Heart, Users, Search } from 'lucide-react';
+import { Heart, Users, Search, User } from 'lucide-react';
 
 export function BottomNavbar({ activeTab, onTabChange }) {
   const navItems = [
@@ -18,6 +18,13 @@ export function BottomNavbar({ activeTab, onTabChange }) {
       labelBn: 'নিখোঁজ',
       icon: Search,
       color: 'text-blue-500'
+    },
+    {
+      id: 'skin',
+      label: 'Skin',
+      labelBn: 'ত্বক',
+      icon: User,
+      color: 'text-green-500'
     }
   ];
 
@@ -42,7 +49,7 @@ export function BottomNavbar({ activeTab, onTabChange }) {
                 {/* Active indicator */}
                 {isActive && (
                   <div className={`absolute top-0 left-1/2 transform -translate-x-1/2 w-8 h-1 rounded-full ${
-                    item.id === 'blood' ? 'bg-red-500' : 'bg-blue-500'
+                    item.id === 'blood' ? 'bg-red-500' : item.id === 'missing' ? 'bg-blue-500' : 'bg-green-500'
                   }`} />
                 )}
                 
@@ -51,7 +58,9 @@ export function BottomNavbar({ activeTab, onTabChange }) {
                   isActive 
                     ? item.id === 'blood' 
                       ? 'bg-red-50 text-red-500 dark:bg-red-900/20 dark:text-red-400' 
-                      : 'bg-blue-50 text-blue-500 dark:bg-blue-900/20 dark:text-blue-400'
+                      : item.id === 'missing'
+                        ? 'bg-blue-50 text-blue-500 dark:bg-blue-900/20 dark:text-blue-400'
+                        : 'bg-green-50 text-green-500 dark:bg-green-900/20 dark:text-green-400'
                     : ''
                 }`}>
                   <IconComponent 

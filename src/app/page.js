@@ -7,6 +7,7 @@ import { FloatingActionButton } from '@/components/FloatingActionButton';
 import { DonorRegistrationDialog } from '@/components/DonorRegistrationDialog';
 import { BottomNavbar } from '@/components/BottomNavbar';
 import { MissingPersons } from '@/components/MissingPersons';
+import { SkinDonors } from '@/components/SkinDonors';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -115,6 +116,15 @@ export default function Home() {
     return (
       <>
         <MissingPersons />
+        <BottomNavbar activeTab={activeTab} onTabChange={setActiveTab} />
+      </>
+    );
+  }
+
+  if (activeTab === 'skin') {
+    return (
+      <>
+        <SkinDonors />
         <BottomNavbar activeTab={activeTab} onTabChange={setActiveTab} />
       </>
     );

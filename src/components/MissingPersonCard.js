@@ -189,9 +189,9 @@ export function MissingPersonCard({ person, onStatusUpdate }) {
             <div className="mt-4 pt-3 border-t border-gray-200 dark:border-gray-700">
               <button
                 onClick={() => setShowMarkAsFoundDialog(true)}
-                className="w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-colors flex items-center justify-center gap-2"
+                className="flex items-center gap-1 px-2 py-1 bg-blue-500 hover:bg-blue-600 text-white text-xs font-medium rounded-lg transition-colors flex-shrink-0"
               >
-                <CheckCircle className="w-4 h-4" />
+                <CheckCircle className="w-3 h-3" />
                 পাওয়া গেছে বলে চিহ্নিত করুন
               </button>
             </div>

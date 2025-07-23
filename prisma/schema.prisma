@@ -47,3 +47,23 @@ model MissingPerson {
 
   @@map("missing_persons")
 }
+
+model SkinDonor {
+  id                String   @id @default(cuid())
+  name              String
+  phoneNumber       String   @unique
+  nearbyHospital    String
+  isAbove18         Boolean  @default(true)
+  voluntaryConsent  Boolean  @default(true)
+  hasDiabetes       Boolean  @default(false)
+  hasHypertension   Boolean  @default(false)
+  hasCancer         Boolean  @default(false)
+  hasSevereIllness  Boolean  @default(false)
+  medicalNotes      String?  // Additional medical information
+  donationStatus    String   @default("registered") // registered, blood_screening, eligible, donated, not_eligible
+  available         Boolean  @default(true)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@map("skin_donors")
+}

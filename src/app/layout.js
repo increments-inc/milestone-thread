@@ -14,13 +14,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "রক্তদাতা তালিকা - জরুরি রক্তের প্রয়োজনে",
-  description: "মাইলস্টোন কলেজ দুর্ঘটনার জন্য জরুরি রক্তদান। দ্রুত রক্তদাতা খুঁজুন এবং যোগাযোগ করুন। একসাথে জীবন বাঁচান।",
-  keywords: "রক্তদান, জরুরি রক্ত, মাইলস্টোন কলেজ, বিমান দুর্ঘটনা, রক্তদাতা, ঢাকা, বাংলাদেশ",
+  title: "মাইলস্টোন কলেজ বিমান দুর্ঘটনা সহায়তা - জরুরি রক্তদান ও স্কিন ডোনেশন | নিখোঁজ তালিকা",
+  description: "মাইলস্টোন কলেজ এয়ার ফোর্স বিমান দুর্ঘটনার আহতদের জন্য জরুরি রক্তদান, স্কিন ডোনেশন ও নিখোঁজ ব্যক্তির খোঁজ। ঢাকা উত্তরা দিয়াবাড়ি দুর্ঘটনা সহায়তা কেন্দ্র।",
+  keywords: "মাইলস্টোন কলেজ বিমান দুর্ঘটনা, এয়ার ফোর্স জেট ক্র্যাশ, উত্তরা দিয়াবাড়ি, জরুরি রক্তদান, স্কিন ডোনেশন, নিখোঁজ ব্যক্তি, বাংলাদেশ বিমান বাহিনী, ঢাকা স্কুল দুর্ঘটনা, F-7 BGI, milestone college dhaka, bangladesh air force crash, uttara diabari accident",
   authors: [{ name: "Increments Inc.", url: "https://incrementsinc.com" }],
   creator: "Increments Inc.",
   publisher: "Increments Inc.",
-  robots: "index, follow",
+  robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+  category: "Emergency Relief, Blood Donation, Medical Aid",
+  classification: "Emergency Response, Disaster Relief, Medical Support",
+  coverage: "Bangladesh, Dhaka, Uttara, Diabari",
+  distribution: "global",
+  rating: "general",
+  referrer: "origin-when-cross-origin",
+  other: {
+    "news_keywords": "মাইলস্টোন কলেজ, বিমান দুর্ঘটনা, এয়ার ফোর্স, জেট ক্র্যাশ, রক্তদান, স্কিন ডোনেশন, নিখোঁজ",
+    "article:section": "Emergency Response",
+    "article:tag": "Bangladesh Air Force, Milestone College, Emergency Aid, Blood Donation, Skin Donation",
+    "geo.region": "BD-13",
+    "geo.placename": "Dhaka, Bangladesh",
+    "geo.position": "23.8103;90.4125",
+    "ICBM": "23.8103, 90.4125"
+  },
   alternates: {
     canonical: "https://gienie.xyz"
   },
@@ -28,30 +43,39 @@ export const metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "রক্তদাতা তালিকা"
+    title: "মাইলস্টোন থ্রেড"
   },
   formatDetection: {
     telephone: false
   },
   openGraph: {
     type: "website",
-    siteName: "রক্তদাতা তালিকা",
-    title: "জরুরি রক্তদান - মাইলস্টোন কলেজ দুর্ঘটনা",
-    description: "মাইলস্টোন কলেজ বিমান দুর্ঘটনার আহতদের জন্য জরুরি রক্তদান। দ্রুত রক্তদাতা খুঁজুন এবং জীবন বাঁচাতে সাহায্য করুন।",
+    siteName: "মাইলস্টোন কলেজ দুর্ঘটনা সহায়তা",
+    title: "মাইলস্টোন কলেজ বিমান দুর্ঘটনা সহায়তা - জরুরি রক্তদান ও স্কিন ডোনেশন",
+    description: "মাইলস্টোন কলেজ এয়ার ফোর্স বিমান দুর্ঘটনার আহতদের জন্য জরুরি রক্তদান, স্কিন ডোনেশন ও নিখোঁজ ব্যক্তির খোঁজ। ঢাকা উত্তরা দিয়াবাড়ি।",
     url: "https://gienie.xyz",
+    locale: "bn_BD",
+    countryName: "Bangladesh",
+    street: "Uttara, Diabari",
+    locality: "Dhaka",
+    region: "Dhaka Division",
+    postalCode: "1230",
+    latitude: 23.8103,
+    longitude: 90.4125,
     images: [
       {
         url: "https://gienie.xyz/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "জরুরি রক্তদান - মাইলস্টোন কলেজ দুর্ঘটনার আহতদের জন্য"
+        alt: "মাইলস্টোন কলেজ বিমান দুর্ঘটনা সহায়তা - জরুরি রক্তদান ও স্কিন ডোনেশন",
+        type: "image/jpeg"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "জরুরি রক্তদান - মাইলস্টোন কলেজ",
-    description: "বিমান দুর্ঘটনার আহতদের জন্য জরুরি রক্তদান প্রয়োজন। রক্তদাতা খুঁজুন এবং জীবন বাঁচান।",
+    title: "মাইলস্টোন কলেজ বিমান দুর্ঘটনা সহায়তা",
+    description: "এয়ার ফোর্স জেট ক্র্যাশ আহতদের জন্য জরুরি রক্তদান, স্কিন ডোনেশন ও নিখোঁজ ব্যক্তির খোঁজ। ঢাকা উত্তরা দিয়াবাড়ি।",
     images: ["https://gienie.xyz/og-image.jpg"],
     creator: "@gienie"
   },
